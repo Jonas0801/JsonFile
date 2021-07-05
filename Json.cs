@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Json : MonoBehaviour
 {
-    public void SaveJsonFile<T>(T data, string fileName) where T : class
+    public static void SaveJsonFile<T>(T data, string fileName) where T : class
     {
         //save json file
         string json = JsonUtility.ToJson(data, true);
@@ -15,7 +15,7 @@ public class Json : MonoBehaviour
         Debug.Log($"{fileName}儲存資料成功");
     }
 
-    public bool LoadJsonFile<T>(ref T data, string fileName) where T : class
+    public static bool LoadJsonFile<T>(ref T data, string fileName) where T : class
     {
         //load json file
         if (!File.Exists(Path.Combine(Application.persistentDataPath, fileName)))
