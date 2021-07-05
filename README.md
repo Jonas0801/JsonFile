@@ -4,7 +4,8 @@ Save and load json file
 Example
 ```C#
 [System.Serializable]
-public class Data{
+public class Data
+{
     public string name;
 }
 ```
