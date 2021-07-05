@@ -19,7 +19,6 @@ public class A
     private void Start()
     {
         Json.SaveJsonFile(myData, FILE_NAME);
-
         bool isLoadData = Json.LoadJsonFile(ref myData, FILE_NAME);
     }
 }
