@@ -3,6 +3,13 @@ Save and load json file
 <br>Generic json function</br>
 Example
 ```C#
+[System.Serializable]
+public class Data{
+    public string name;
+}
+```
+
+```C#
 public class A 
 {
     private Data myData = new Data() { name = "Hello world!" };
