@@ -13,8 +13,8 @@ public class Data
 ```C#
 public class A 
 {
-    private Data myData = new Data() { name = "Hello world!" };
     private const string FILE_NAME = "MyData.json"; 
+    private Data myData = new Data() { name = "Hello world!" };    
 
     private void Start()
     {
